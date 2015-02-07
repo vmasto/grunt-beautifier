@@ -1,11 +1,11 @@
 {
-  "name": "simple-beautifier",
-  "version": "1.0.0",
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-cssbeautifier": "^0.1.2",
-    "grunt-prettify": "^0.4.0"
-  },
+	"name": "simple-beautifier",
+	"version": "1.0.0",
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"grunt-cssbeautifier": "^0.1.2",
+		"grunt-prettify": "^0.4.0"
+	},
 	"author": "@vmasto",
 	"license": "GPL"
 }
