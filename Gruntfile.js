@@ -20,6 +20,21 @@ module.exports = function(grunt) {
 			}
 		},
 
+		autonav: {
+			all: {
+				expand: true,
+				cwd: "../../",
+				ext: ".html",
+				src: ["*.html"],
+				dest: "../../"
+			},
+			options: {
+				activeclass: 'current-menu-item',
+				parentclass: 'current-menu-parent',
+				ancestorclass: 'current-menu-ancestor'
+			}
+		},
+
 		cssbeautifier : {
 			files : ["../../style.css"],
 			options : {
@@ -32,6 +47,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-prettify');
 	grunt.loadNpmTasks('grunt-cssbeautifier');
+	grunt.loadNpmTasks('grunt-autonav');
 
   // Default task(s).
   grunt.registerTask('default', ['prettify']);
